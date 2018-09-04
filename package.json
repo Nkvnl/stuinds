@@ -1,0 +1,27 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "niek",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-validator": "^5.2.0",
+    "fontawesome": "^4.7.2",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.3.1",
+    "nodemailer": "^4.6.7",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}
