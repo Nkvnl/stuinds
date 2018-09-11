@@ -1,0 +1,127 @@
+body{
+    overflow-x:hidden;
+}
+
+.title{
+  margin-top:10%;
+}
+
+#main{
+  min-height:500px;
+}
+
+.fotogallerij{
+    padding-top:130px;
+    padding-bottom:110px
+}
+
+img{
+    border:2px solid green;
+}
+
+.fotogallerij img{
+    
+    padding:25px;
+}
+
+.par{
+  font-size:24px;
+}
+
+.sub-heading{
+  font-size:32px;
+  z-index:10!important;
+}
+
+
+nav{
+    background:transparent!important;
+    background-color: white!important;
+    margin:auto!important;
+    color:white!important;
+}
+
+body{
+    font-family: 'Raleway', sans-serif!important;
+}
+
+
+
+.navbar{
+    /*border-bottom:#BBA26A 1.5px solid;*/
+    z-index:1000;
+    box-shadow:0px 20px 40px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+.navbar{
+        white-space: nowrap;
+}
+
+
+
+li:hover{
+    border-bottom:1px solid #45B7B7;
+    /*border-top:1.5px solid #bba26a;*/
+    /*margin:auto;*/
+    /*color:white!important;*/
+    /*background:#45B7B7!important;*/
+    font-weight:900!important;
+}
+
+li{
+    border-radius: 2px;
+}
+
+
+.nav-link{
+    font-size:16px;   
+    color:#45B7B7!important;
+    font-weight:300!important;
+    font-family: 'Raleway', sans-serif!important;
+
+}
+
+.signature{
+    font-size:100%;
+}
+
+.btn-primary-custom {
+	background-color: #353B97!important;
+	border-color: #353B97!important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; /* Changes regular toggle color */
+      font-family: 'Raleway', sans-serif!important;
+
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+  background-color: white; /* Changes toggle color on hover */
+}
+
+
+
+.home-inner{
+    padding-top: 150px;
+}
+
+
+
+
+#main-footer{
+    color:white;
+    background-color: #409A40!important;
+    box-shadow:2px 2px 3px black;
+    padding:25px;
+}
+
+#main-footer a{
+    color:white;
+}
+    
+
+

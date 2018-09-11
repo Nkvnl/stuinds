@@ -2,9 +2,10 @@ var express = require("express"); // call express
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
 var app = express();
+// const compression = require('compression');
 
 
-
+// app.use(compression());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.static(__dirname + "/public"));
@@ -18,6 +19,30 @@ app.get("/", function(req, res) {
 
 app.get("/gallerij", function(req, res) {
     res.render("gallerij");
+});
+
+app.get("/tuin", function(req, res) {
+    res.render("tuin");
+});
+
+app.get("/archief", function(req, res) {
+    res.render("archief");
+});
+
+app.get("/contact", function(req, res) {
+    res.render("contact");
+});
+
+app.get("/actueel", function(req, res) {
+    res.render("actueel");
+});
+
+app.get("/agenda", function(req, res) {
+    res.render("agenda");
+});
+
+app.get("/vrijwilligers", function(req, res) {
+    res.render("vrijwilligers");
 });
 
 
