@@ -1,8 +1,9 @@
 body{
     overflow-x:hidden;
-        background: url('../img/footer_image1.png') repeat;
+    /*background: url('../img/footer_image1.png') repeat;*/
     background-position:left;
     background-repeat:repeat; 
+    font-family: 'Montserrat', sans-serif!important;
 }
 .title{
   margin-top:10%;
@@ -33,12 +34,37 @@ body{
    opacity:.8;    
 }
 
+.caption{
+  padding:10px;
+  position:absolute;
+  top:60%;
+  left:10%;
+  font-size:32px;
+  color:white;
+  background:rgba(0,0,0,.3);
+}
+
+@media only screen and (max-width: 600px) {
+    .caption{
+    position:absolute;
+    top:40%;
+    left:0%;
+    font-size:24px;
+    color:white;
+    background:rgba(0,0,0,.3);  
+    }
+}
+
+
+.caption hr{
+    border:.8px solid white;
+    width:80%;
+}
+
 #main{
-     background: url('../img/footer_image1.png') repeat;
     background-position:left right;
     background-repeat:repeat;   
      min-height:600px;
-     font-size:18px;
      z-index:-1000!important;
 }
 
@@ -89,10 +115,13 @@ nav p{
     
 }
 
+
+
 .fixed-top-2{
     background:#91C4C4!important;    
     padding-top:78px!important;
     z-index:1!important;
+    box-shadow:0px 20px 40px rgba(0,0,0,0.3);
 }
 
 .fixed-top-2 nav-link{
@@ -139,16 +168,17 @@ nav p{
 }
 
 #main .container{
-    border-radius:10px;
+    /*border-radius:10px;*/
     background:white!important;
     /*border-bottom:20px solid #91c4c4;    */
-    position:absolute;
-    top:60%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    box-shadow:0px 20px 40px rgba(0,0,0,0.5);
+    /*position:absolute;*/
+    /*top:90%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*box-shadow:0px 20px 40px rgba(0,0,0,0.5);*/
+        font-family: 'Montserrat', sans-serif!important;
 }
 
 #main-archief .container{
@@ -195,13 +225,36 @@ nav p{
     padding-bottom:110px;
 }
 
-.par{
-  font-size:24px;
+#main .par, .sub-heading{
+  font-size:20px!important;
+}
+
+.heading{
+    color:#333!important;
+    font-family: 'Raleway', sans-serif!important;
+    font-weight:900;
+    font-size:43px;
+    margin:90px 0px;
 }
 
 .sub-heading{
-  font-size:32px;
+  font-size:24px;
   z-index:10!important;
+}
+
+.fa-quote-left{
+    color:black!important;
+    text-shadow:0px 2px 4px rgba(0,0,0,0.6);
+}
+
+.fa-quote-right{
+    color:black!important;
+    text-shadow:0px 2px 4px rgba(0,0,0,0.6);
+}
+
+.fa-envira{
+    color:black!important;
+    text-shadow:0px 2px 4px rgba(0,0,0,0.6);
 }
 
 .ol{
@@ -226,6 +279,13 @@ nav p{
     margin:auto!important;
 }
 
+.shift2{
+    transform: rotate(8deg);
+    box-shadow:0px 40px 80px rgba(0,0,0,0.5);
+    border:2px solid #45B7B7;
+    margin:auto!important;    
+}
+
 nav{
     background:transparent!important;
     background-color: white!important;
@@ -234,10 +294,10 @@ nav{
 }
 
 body{
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Montserrat', sans-serif!important;
 }
 #home1{
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Montserrat', sans-serif!important;
 }
 
 .fa{
@@ -319,17 +379,20 @@ body{
 }
 
 #home-section{
-   /*background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/h13hd.JPG") center;*/
+   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/h15hd.JPG") center;
     background-size:cover;
     background-attachment:scroll;
     min-height:700px;
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Montserrat', sans-serif!important;
+    height:700px;
 }
 
 
+
+
 .carousel-inner{
-    height:500px;
-    border-bottom:8px solid #91c4c4;
+    height:700px;
+    /*border-bottom:8px solid #91c4c4;*/
 }
 
 #home-section4{
@@ -369,6 +432,15 @@ body{
     min-height:300px;
 }
 
+.link button{
+    position:relative;
+    z-index:1000;
+    top:200px;
+    left:100px;
+    box-shadow:0px 20px 40px rgba(0,0,0,0.3);
+    transform:rotate(-4deg);
+}
+
 .navbar{
         white-space: nowrap;
 }
@@ -399,21 +471,10 @@ body{
     font-size:120%;
 }
 
-li:hover{
-    /*background:white!important;*/
-    /*color:rgb(145, 196, 196)!important;*/
-    transform:scale(1.15,1.15);
-    transition:1s;
-    /*border:0px solid white!important;*/
-    /*padding-top:5px;*/
-    /*padding-bottom:5px;*/
-    /*transition:1s;*/
-    /*border-bottom:1px solid #45B7B7;*/
-    /*border-top:1.5px solid #bba26a;*/
-    /*margin:auto;*/
-    /*color:white!important;*/
-    /*background:#45B7B7!important;*/
-    /*font-weight:900!important;*/
+.nav-link:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
 }
 
 li{
@@ -427,18 +488,20 @@ button:hover{
 }
 
 .nav-link{
-    padding:0;
-    border-left:1px solid white;
-    border-right:1px solid white;
-    font-size:16px;   
-    color:white!important;
-    font-weight:400!important;
-    font-family: 'Raleway', sans-serif!important;
-    margin-top:10px;
+  transition: 0.3s ease;
+  background: #91c4c4;
+  color: #ffffff!important;
+  font-size: 16px;
+  text-decoration: none;
+  border-top: 4px solid #91c4c4;
+  border-bottom: 4px solid #91c4c4;
+  padding: 20px 0px;
+  margin: 0 20px;
+  margin-top:10px;
 }
 
 .signature{
-    font-size:100%;
+    font-size:120%;
 }
 
 .btn-primary-custom {
@@ -461,6 +524,21 @@ button:hover{
 
 .home-inner{
     padding-top: 150px;
+}
+
+.main-footer ul li a{
+    transition:.4s ease;
+}
+
+.main-footer a:hover{
+   background:white;
+   color:#91c4c4!important;
+   padding:0 3px;
+   font-weight:bold!important;
+}
+
+.signature{
+    transition:1s ease;
 }
 
 .jasmine{
