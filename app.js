@@ -1,6 +1,4 @@
 var express = require("express"); // call express
-var bodyParser = require("body-parser");
-var nodemailer = require("nodemailer");
 var app = express();
 // const compression = require('compression');
 
@@ -9,9 +7,6 @@ var app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.static(__dirname + "/public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
 
 app.get("/", function(req, res) {
     res.render("index");
